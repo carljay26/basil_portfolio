@@ -82,6 +82,8 @@ class ContentController extends Controller
             $data['profile_image_url'] = Storage::url($path);
         }
 
+        unset($data['profile_image_file']);
+
         DB::table('profiles')->where('id', $profile->id)->update(array_merge($data, [
             'updated_at' => now(),
         ]));
