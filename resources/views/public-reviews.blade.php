@@ -79,7 +79,7 @@
                         @foreach ($clients as $client)
                             <div class="flex flex-col items-center gap-3 p-4 border border-gray-100 bg-white hover-lift">
                                 @if ($client->logo_url)
-                                    <img src="{{ $client->logo_url }}" alt="{{ $client->name }}" class="h-10 object-contain grayscale hover:grayscale-0 transition-all">
+                                    <img src="{{ $client->logo_url }}" alt="{{ $client->name }}" class="h-10 object-contain transition-all">
                                 @else
                                     <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-400">
                                         {{ strtoupper(mb_substr($client->name ?: '?', 0, 2)) }}

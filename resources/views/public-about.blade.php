@@ -35,7 +35,7 @@
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-14">
                 {{-- Left: photo + quick info --}}
                 <div class="lg:col-span-4 space-y-6">
-                    <div class="aspect-[3/4] bg-gray-200 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                    <div class="aspect-[3/4] bg-gray-200 overflow-hidden transition-all duration-700">
                         @if ($avatarUrl)
                             <img src="{{ $avatarUrl }}" alt="{{ $fullName }}" class="w-full h-full object-cover">
                         @else

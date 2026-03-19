@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -256,7 +256,7 @@
                     <div class="w-80 h-96 lg:w-96 lg:h-[480px] overflow-hidden" style="background:#e5e7eb;">
                         @if ($avatarUrl)
                             <img src="{{ $avatarUrl }}" alt="{{ $fullName }}"
-                                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                                 class="w-full h-full object-cover transition-all duration-700">
                         @else
                             <div class="w-full h-full flex items-center justify-center text-gray-300">
                                 <svg class="w-20 h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -386,7 +386,7 @@
                         @if ($project->thumbnail_url)
                             <div class="h-52 overflow-hidden {{ $project->featured && $idx === 0 ? 'md:h-72' : '' }}">
                                 <img src="{{ $project->thumbnail_url }}" alt="{{ $project->title }}"
-                                     class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105">
+                                     class="w-full h-full object-cover transition-all duration-500 scale-100 group-hover:scale-105">
                             </div>
                         @else
                             <div class="h-44 flex items-center justify-center" style="background:rgba(255,255,255,.03);">

@@ -35,7 +35,7 @@
                                 <div class="aspect-video bg-gray-100 overflow-hidden">
                                     @if ($project->thumbnail_url)
                                         <img src="{{ $project->thumbnail_url }}" alt="{{ $project->title }}"
-                                             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                                             class="w-full h-full object-cover transition-all duration-500">
                                     @else
                                         <div class="w-full h-full flex items-center justify-center text-gray-300">
                                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
